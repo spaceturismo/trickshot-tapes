@@ -275,7 +275,7 @@ if(typeof module!=='undefined')module.exports={LEVELS,newShot,launch,advance,ste
 
 /* ---------- front end ---------- */
 const cv=document.getElementById('c'),ctx=cv.getContext('2d');
-const DPR=Math.min(2,window.devicePixelRatio||1);
+const DPR=Math.min(1.5,window.devicePixelRatio||1);
 cv.width=W*DPR;cv.height=H*DPR;
 const RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
 const $=id=>document.getElementById(id);
